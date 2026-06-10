@@ -1,0 +1,60 @@
+const EventData = [
+  {
+    id: "event_001",
+    title: "Saudi Founding Day",
+    dayNum: "15",
+    dayName: "Monday",
+    month: "June",
+    image: "/Saudi-founding-day.png",
+  },
+  {
+    id: "event_002",
+    title: "Tech Innovation Forum 2026",
+    dayNum: "22",
+    dayName: "Monday",
+    month: "June",
+    image: "/dga-2.jpg",
+  },
+  {
+    id: "event_003",
+    title: "Cybersecurity & Cloud Workshop",
+    dayNum: "3",
+    dayName: "Wednesday",
+    month: "July",
+    image: "/dga-2.jpg",
+  },
+  {
+    id: "event_004",
+    title: "Space Exploration Conference",
+    dayNum: "10",
+    dayName: "Friday",
+    month: "July",
+    image: "/dga-2.jpg",
+  },
+  {
+    id: "event_005",
+    title: "Quantum Computing Symposium",
+    dayNum: "18",
+    dayName: "Saturday",
+    month: "July",
+    image: "/dga-2.jpg",
+  },
+  {
+    id: "event_006",
+    title: "Quantum Computing Symposium",
+    dayNum: "18",
+    dayName: "Saturday",
+    month: "July",
+    image: "/dga-2.jpg",
+  },
+  {
+    id: "event_007",
+    title: "Quantum Computing Symposium",
+    dayNum: "18",
+    dayName: "Saturday",
+    month: "July",
+    image: "/dga-2.jpg",
+  },
+];
+
+export default EventData;
