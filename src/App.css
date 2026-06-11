@@ -1788,3 +1788,203 @@ p.news-paragraph {
   background: #d1d5db;
   cursor: default;
 }
+
+/* ─────────────────────────────────────────
+   Mobile responsive  (≤ 640 px)
+───────────────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* Transparent fixed overlay — lets page content show through when closed */
+  .chatbot {
+    position: fixed;
+    inset: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  /* Bot button stays tappable */
+  .bot-button {
+    pointer-events: auto;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 20px rgba(27, 131, 84, 0.38);
+  }
+
+  /* Widget fills the entire screen */
+  .chatbotAgent {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    margin: 0;
+    z-index: 100;
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.32, 0.72, 0, 1);
+    transition: transform 0.38s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .chatbotAgent.active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* Expanded = already full screen on mobile */
+  .chatbotAgent.expanded {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ── Headers — no rounded corners, respect notch ── */
+  .head-bar,
+  .tab-head,
+  .news-detail-head {
+    border-radius: 0;
+    padding-top: calc(12px + env(safe-area-inset-top, 0px));
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Bigger close/back button tap areas */
+  .detail-head-btn,
+  .cancel-btn {
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Expand button is pointless when already full screen */
+  .detail-head-actions .detail-head-btn:first-child {
+    display: none;
+  }
+
+  /* ── Nav — respect home indicator ── */
+  nav {
+    border-radius: 0;
+    padding: 10px 8px calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .nav-container {
+    padding: 6px 14px;
+    min-width: 56px;
+    min-height: 44px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-item {
+    font-size: 11px;
+  }
+
+  /* ── Home header ── */
+  .header {
+    padding: 20px 20px;
+  }
+
+  h1.header-title {
+    font-size: 21px;
+  }
+
+  /* ── Larger touch targets for list rows ── */
+  .home-article-row {
+    padding: 14px 12px;
+  }
+
+  .help-category-card {
+    padding: 14px;
+  }
+
+  .help-article-row {
+    padding: 14px 12px;
+  }
+
+  /* ── Event slider nav ── */
+  .slider-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ── News chips ── */
+  .cat-chip {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  /* ── Chat ── */
+  .msg-bubble-wrap {
+    max-width: 86%;
+  }
+
+  .msg-bubble {
+    font-size: 14px;
+    padding: 11px 14px;
+  }
+
+  .msg-textarea {
+    font-size: 15px;
+  }
+
+  .msg-send-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Safe area padding at bottom of input */
+  .msg-chat-input-area {
+    padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Taller conversation rows */
+  .msg-convo-item {
+    padding: 16px 20px;
+  }
+
+  .msg-convo-preview {
+    font-size: 14px;
+  }
+
+  /* Tip buttons easier to tap */
+  .msg-tip-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* Start message button */
+  .msg-start-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── News search input ── */
+  .news-search-clear {
+    padding: 6px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+
+  /* ── Help back button ── */
+  .help-back-btn {
+    padding: 8px 0;
+    font-size: 14px;
+    min-height: 44px;
+  }
+}
