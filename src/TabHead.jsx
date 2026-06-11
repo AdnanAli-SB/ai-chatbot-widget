@@ -3,7 +3,7 @@ const TabHead = ({ title, onClose }) => {
     <div className="tab-head">
       <span className="tab-head-title">{title}</span>
       <button className="cancel-btn" onClick={onClose} title="Close">
-        <img src="/multiplication-sign.svg" alt="close" />
+        <img src={`${import.meta.env.BASE_URL}multiplication-sign.svg`} alt="close" />
       </button>
     </div>
   );

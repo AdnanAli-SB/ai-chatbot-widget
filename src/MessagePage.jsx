@@ -54,7 +54,7 @@ const SendIcon = () => (
 const BotAvatar = ({ size = 32 }) => (
   <div className="msg-bot-avatar" style={{ width: size, height: size }}>
     <img
-      src="/chat-bot.png"
+      src={`${import.meta.env.BASE_URL}chat-bot.png`}
       alt="AI"
       style={{ width: "60%", height: "60%", objectFit: "contain" }}
     />

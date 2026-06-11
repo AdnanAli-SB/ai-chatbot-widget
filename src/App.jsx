@@ -100,7 +100,7 @@ function App() {
         </div>
       </div>
       <button className="bot-button" onClick={() => setIsOpen(!isOpen)}>
-        <img src="/chat-bot.png" alt=";" />
+        <img src={`${import.meta.env.BASE_URL}chat-bot.png`} alt=";" />
       </button>
     </div>
   );

@@ -74,7 +74,7 @@ const Events = () => {
         <div className="event-display-card" key={activeEvent.id}>
           <img
             className="event-display-img"
-            src={activeEvent.image}
+src={`${import.meta.env.BASE_URL}${activeEvent.image.replace(/^\//, "")}`}
             alt={activeEvent.title}
           />
           <div className="event-display-footer">

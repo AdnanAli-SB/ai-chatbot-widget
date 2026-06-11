@@ -4,7 +4,7 @@ const NewsArtical = ({ newsDetails, onSelect }) => {
       <div className="news-thumnail" onClick={() => onSelect(newsDetails)}>
         <div
           className="news-img"
-          style={{ backgroundImage: `url(/dga-2.jpg)` }}
+          style={{ backgroundImage: `url(${import.meta.env.BASE_URL}dga-2.jpg)` }}
         />
         <div className="newsCaption">
           <div className="newsChip">

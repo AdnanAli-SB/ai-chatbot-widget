@@ -20,7 +20,7 @@ if (selectedArticle) {
       <div className="news-detail" key={selectedArticle.id}>
         <div
           className="news-detail-img"
-          style={{ backgroundImage: `url(/dga-2.jpg)` }}
+          style={{ backgroundImage: `url(${import.meta.env.BASE_URL}dga-2.jpg)` }}
         />
         <div className="news-detail-body">
           <div className="newsChip">

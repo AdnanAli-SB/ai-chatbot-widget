@@ -6,7 +6,7 @@ const Head = (props) => {
   return (
     <div className="head-bar">
       <div className="head-avatar">
-        <img src="/chat-bot.png" alt="" />
+        <img src={`${import.meta.env.BASE_URL}chat-bot.png`} alt="" />
       </div>
       <div className="userInfo">
         <div className="userName">HUMAIN Assistant</div>
@@ -18,7 +18,7 @@ const Head = (props) => {
         </div>
       </div>
       <button onClick={test} className="cancel-btn">
-        <img src="/multiplication-sign.svg" alt="close" />
+        <img src={`${import.meta.env.BASE_URL}multiplication-sign.svg`} alt="close" />
       </button>
     </div>
   );
